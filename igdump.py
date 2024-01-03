@@ -210,7 +210,7 @@ def main(argv: list[str] = []) -> None:
         )"""
     )
 
-    following_all: list[Mapping[str, Any]] = client.get_following_all("gkze")
+    following_all: list[Mapping[str, Any]] = client.get_following_all(args.user_name)
 
     futures: list[Future] = []
     with ThreadPoolExecutor(args.threads) as tpe:
