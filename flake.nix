@@ -51,7 +51,7 @@
       # Development shell
       devShells.default = pkgs.devshell.mkShell {
         name = "nixcfg";
-        packages = with pkgs; [ pyupgrade ];
+        packages = with pkgs; [ python3 pyupgrade ];
       };
     };
   };
